@@ -1,0 +1,32 @@
+/*
+*{
+    background-color: chartreuse;
+}*/
+/*esto es un comentario de una sola linea*/
+/*esto NO es HTML... Es CSS*/
+body{
+    background-color: brown;
+}
+
+/*aplicar estilo por Id*/
+#idsection{
+    background-color: chocolate;
+}
+
+
+#nav {
+    background-color: burlywood;
+}
+
+/* estilo por clases*/
+
+.links{
+    color: darkslategray;
+}
+a{
+    text-decoration: none;
+}
+
+#linkActive{
+    color: black;
+}
