@@ -1,102 +1,211 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad práctica obligatoria Nro 1</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>tp integrador1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
     <header>
-        <!-- ACA MENU -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <nav class="navbar navbar-ligt ">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Codo a Codo</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Desactivado</a>
-                  </li>
+                <a class="navbar-brand" href="#">
+                  <img src="img/codoacodo.png" alt="" width="100" height="50" class="d-inline-block" /> Conf Bs As
+                </a>
+                <ul class="nav justify-content-end ">
+                    <li class="nav-item1">
+                        <a class="nav-link active" aria-current="page" href="#confbsas">La Conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#oradores">Los Oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#lugarfecha">El lugar y la Fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#conor">Convi&eacute;rtete en Orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#comprar"><span>Comprar Tickets</span></a>
+                    </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  <i class="bi-alarm"></i>
-                </form>
-              </div>
             </div>
-          </nav>
+        </nav>
+        
+        <div class="card bg-dark text-white text-end carduno" id="confbsas">
+            <div class="foto2"><img src="img/ba1.jpg" class="card-img" "></div>
+            <div class="card-img-overlay card2">
+                <h5 class="card-title">Conf Bs As</h5>
+                <p class="card-text">Bs As llega por primera vez a Argentina. Evento para compartir con <br>
+                    nuestra comunidad el conocimiento y experiencia de los expertos que <br>
+                    estan creando el futuro de Internet. Ven a conocer a mis miembros del <br>
+                    evento, a otros estudiantes de Codo a Codo y a los oradores de primer <br>
+                    nivel que tenemos para ti. Te esperamos!</p>
+                <button type="button" class="btn btn-light botontransparente">Quiero ser Orador</button>
+                <button type="button" class="btn btn-light botonverde">Comprar Tickets</button>
+            </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section>
-        
-          <div class="row">
-          
-              <div class="card" style="width: 20rem">  
-                 <img src="https://www.elcodigofuente.com/wp-content/uploads/logo-html-5.webp" class="card-img-top" alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">titulo 1</h5>
-                     <p  class="card-text">Contenido de Card</p>
-                     <p  class="card-text">Ultima actualizacion 1</p>
-                  </div>
-             </div>
-          
-              <div class="card" style="width: 22rem;">
-                 <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDRAODQ0NFREWFhUSFRUYHSggGBolGxUVITItMTU3NzouFx8zODMsNygxLysBCgoKDg0OFxAQGjcdHR0tKy0rLSs3LSsrLSsrKy0rLS0tLS0rKy0rKy0tLS0vLSsrLi0tKystKy0rKystKy0rK//AABEIAKEBOAMBEQACEQEDEQH/xAAbAAEBAAIDAQAAAAAAAAAAAAABAgAFAwQGB//EAEYQAAIBAgMBCQwIBAYDAAAAAAABAgMRBAUSIQYTMVFSYXGRoRUWIiMyQWOTosHR4QdCVHKBkrHSFDNiwhdDU7LT8XOCo//EABoBAQEAAwEBAAAAAAAAAAAAAAABAgQFAwb/xAAxEQEAAQMBBAgFBQEBAAAAAAAAAQIDEQQFEjFRExUhQWFxodEUUoGx8CMykcHhIkL/2gAMAwEAAhEDEQA/ANcfTPklIBApBCAoBAUEICApAICQNgMsAhGAYBgGAYBgBYKLAYAFBYAAGAMACpYAAMACpYAAMKCi0RFAKCECkAgKQRQGICgEgywDYBCEDLANgMsBlgMsAWAywABgAFAAUDQAAMCQMYVLAAJYUMAYAwqWByIIUEUgFAUgFBCgECgEgUgEIwBsA2AQNLn26COBnThKjKpvkXJOM1G1na21GrqNTFmYiYzluaXRzfiZicYat7uqf2Wp66P7Tw6xp+X1bXVNXz+n+tjnG6SOE3i9GU9/pKqrTUdK2bODbwnte1cWt3szmMtfT6Gb29irG7OGu7+af2Wfro/tPHrGn5fVsdU1fP6Nj3yQ/gf43eZad83ve9avfVa97Hv8VHRdLhr/AAU9P0O93Zy13fzT+yz9dH9p4dY0/L6tjqmr5/T/AFs8h3QRx06kI0pU97jGTbmpXu7eZHvp9TF6ZiIxhrarRzp4iZnOW5sbTSAAFFgAoGAADAkKGBIAwAKlgAAwrkCFBCBSAQKQQgKAQFEFBCA2AQMCEDw30hfzsN/4an+9HK2h+6nydzZP7K/OPs9Bk+V4SWEwspYbDSlLDUJSlKjTcpSdNNttrazcs2bc26ZmmOEd0cmhqL92L1cRXMds9883NneS0sZRVNpQnBeJqJfy3bgsvq7FdfAyv2KbtOOXB56bVVWa97jE8Y5/68Nl9eWX4mVPFUIThdRqwnTjNpeapTbX/a7OVbqmxc3a4zHf7w7l2iNTaiq3Vie6eH0n87H0BYbDYjD6Iwpyw9WN0qaUYNPbqVuB37UdjdoroxEdkuBv3bdzMzMVRzeAzTLquWYiMrRqU73pTqQUoVI+eE09l7cPWubj3bVWnrieMd3i79m/Rqrcxwnvxxjxj883t8hxWGxFLfcPTp0m7RqwjCMZwlyXZbVxHVsV266d6iMc3E1Vu7bq3a5zybI92sGAAAUABQMCWAMACpYAwJYAwqWAMK5AikEKApAKCFAUgEBRBSAwIpAIGBDYBA89un3PVMdUpThVhT3uEotTjJ3u7+Y09TppvTExOMOho9ZTYpqiYzlpXuDrfaKH5Jmr1dV80N3rej5ZbfPtzdXFfw2itCG8UVSepSep7Nqt0Gzf0tVzdxOMRhqaXXU2d/NOd6ctV3jV/tNH8kzX6vr+aG11tb+SfRtI7mqqy94Lfoa3X31TtLSldO1uHzPrNiNLV0PR578tWddT8R0272Yxhq+8av8AaaP5Zmv1fX8za61t/LPo225rc7UwVWpUnVhUU6ei0FJbdSd3f8es2NNparVUzM5y1NZrab9MUxGMS9CbrnMCpYAAMKABlEgDAkKGBIAwAKlgAVaCKQQoCgFBFAKAogUAhCgKAxBFAdGrmOmUo73fS2r6+HsLhnFGUd1PR+38hhdxndX0ft/IYNw91fR+38hhOjHdX0ft/IYNxndX0ft/IYNxndT0ft/IYXcZ3U9H7fyGDcZ3U9H7fyGDcHdP0ft/IuDcVTzDVKMdHlNLyuN9BMJuO6RiGAASwoKBgSwBgDCpYAwJChgSByIIQKQCBSCFAUgFEFIIUAoBCEBA0uPVqs+lPrSMoe1PB1yqwDAMA7mXYSNXXqclp020289+NcxJljVVh3O5NPlVOuPwJlh0ks7k0+VU64/AZOklncmnyqnXH4DJ0korZZTjCUtVTwYylwx8yvxDKxXMy6GCV6sOm/UrllnVwboxeIYVIAwoAllABLAAqWAMCWFDAkDkQRQCgKQQgUgECkQIQoCgFBCAgafNFar0xi/d7jKHrRwdQrJ6XAbh8biKNKvTnhVCtTjUipVKikoyV0mlB7TTr11uiqaZiezy927RobtdMVRMdvn7Ox/h7mH+pg/W1f8AjMesbXKfT3ZdXXecevsz/D3MP9TB+tq/8Y6xtcp9Pc6uu849fZ3sq3B4+DqXnhXfRwVanmv/AEc5J2hanun092FezL08Jj+Z9mx7ysbysN6yf7CfH2vH092HVd/w/mfZneVjeVhvWT/YPj7Xj6e51Xf8P5n2cWK3I4ulTqVZyw+mnCVSVqk29MVd28HmMqdbbqqimM9v5zYV7NvUUzVMxiO3jPs8zj3ajU+6117PebcNKnjDT5ar1Y8yk+y3vMp4PWvg27MXkwKlgDAlhQyiQBgSFDAkAYEsKGByIIUBSAUEUAoCiBQCEUgEIUAgIRq84XhxfHD9G/iZQ9aODoFZvsW4mpryzBvihOH5ako+44GrjF6p9Do6s2KPJuzWbLAOxhH5X4e8Ds6lxoGWJgazdRPTgMVz0pQ/N4PvPfTRm9T5tXWzjT1+T5Dmr8TPncV7SO/D5mji12VLxjfFB/qiy9K+DasxeQCpYABLCgolgDAkKGBIAwAKlgciCFAUAoIoCkAkCgKQQoBQRSAQEI1ucr+W/vL9Cw9LbWmT0S4J8KXUMjN7jyV1IuZGb3HkrqQzI2eSU43q+Cv8vzL+oxmZeV2InGW03uPJj1ImZeW5TyfQvo9pKOEqNJLXiJPZxKEF7mcfaE5uR5e76DZNG7Znxn+odvdtO2X1VypUY/8A0i/ceeijN6Pr9nttKcaer6feHybOX4pLjqL9GdyHz1vi62ULbN80V+vwLLKtsWYvMADCpAGFSUDAlgDAlhQBLAAqWByIIUBQCgigKQCQUgFBCgFBFIBQCgjo5wvAg+KdutP4Fh6UcWpMnowDlwsIyq0ozvolUpxnbY9Lkk7c9rmNUzFMzDKiImqInnD6Y/o9y/l4v1tP9hx+sLvh+fV2urrPi7eX7g8DDXpnitum96kHwX/o5x1hd5R+fVjVsyzPfP59Hd7yMHy8R+eH7SfH3eUfn1Y9VWec+ns3WVZdTwlJUaTk4qUpXm05Xb5kjWu3ZuVb0tyxYps0blPBpPpAnbCU48rEQX4KE37ja0EfqT5NLatWLMRzn+pfLc7fg01xyk+pL4nYhxLaMoXgzf8AUl1L5iSt3mRgABhUgDCpKBgSwBgSwoAlgAVLA5EEKAoBQRQFIBIKQCghQCgikAgKCOpmyvS6JRfu95YZ0cWmMnqwDLtbVwraukLwfWO/vLH/AJtX1FT4HD+AvcvWHd+Psc/SXby/dtl0tempUdtN/EzXHxofA3uXqxq2jYjv9JdzvxwHLqeqkT4G9y9WPWen5z/Et1hMRGtThVhfRUipxurNxauthrVUzTVNM8YbtuuK6Yqp4S8r9ItTxeFhxzqT/LFL+439nx21S5e1p/5ojxn89XzLO34VNcSk+tr4HWhyLfe5MqXi3zzf6IklfF22RgABhUgDCpKBgSwBgSwoAlgAVLA5EEKApAKCKAUBRAoBCKQCEUgEBA6+Yq9Gf/q/aRYWni0Zk9noNxWTYfH16tGu6iUKO+w3qUYvZOMXe6fKRqau9Vapiaebb0dmi7VNNXJ66r9H2AUZOM8VqUZab1YNarbPqGjG0Lue3H59XQnZ9rHe+YRd0nxpHZcRtMj4avRT/uJLzudzamLyfXMop6MLhocmhRj1QR89dnNdU+MvrrFO7aojlEfZ5H6RZ3q4WPJp1ZfmlH9p0Nnx/wA1T5ORtef+6I8J/p84zl+NS4oL9WdOHOt8Hay5Wox59T7WSeLGri7DIxAUMCQJYUFEsAYEhQwACWABUsC0EUgKQCgigFAIFIgQikAgKCEBA48Wr0qn3JfoIWni0Bm9nqvo1qacxty8NWh7UJf2mltCP0frH9t7Z8/rfSf6fUziO4+dY76Oa0bvDYmnNeaFaMqbS4tUbp9SOtRtGmf3048nIr2bP/ir+XVyncnmUJ1ISwz26LSVSm4NLVtvqPedZZmM733adehvzMRu/Z6XC7hq8l4+vTpp8Kpp1JW6XZLtNeraFMftjL1o2TXP76seXb7PdQiopJcCSS6EcqXdiMPn27+pfGwjycPT63OfyOxoI/SmfH2fP7UqzfiOUR95fPs1d60uZRXsp+8344NSjg2ODVqUPup9e0xl51cXKwgCpYABLChlEsAYEhQwJAGBIUMC0EIFIBApBCgKAUQUEKAQFBFIBAmavGS44tdgIeeM3u2G5/NHgsVSxOjfNGtOGrRqUoOPDZ24b/geV+10tE0cMvaxd6KuK8ZfRcBu8y+rZVHVw0uDxtPVC/3oX2dNjk16C7Tw7fL/AF16NfZq49nm9DhMZRrx1UKtKtHjpTjNLptwGpVRVROKow26a6a4zTOWwwf1vw95iyXicXSorVVq06a45zUV2mVNFVU4pjLCu5RRGapx5tHjN2OCp3UHUrvg8XC0euVuy5tUaG7Vx7Glc2nYp4f9eX+4eJzzMv4zESr6N7uoxUdWqyS47I6di10VG7nLiam/01ya8YePzB3rVPvW6lb3GxBTwht6StCK4oxXYYvKeKggYUMCWFDAGUSBLAAqWAASwBhUgciCECkAgUghApAJAoBCKQCAhCAoDzslZtcTaM3uAMAYScZKUW4yXBKLcZLoaExmMSsTMTmHpMm3QY+UKlN4yu4pQted5/W+v5Xaa86e1nO7H54cGVzVXsY35/PHi5Jycm5SblJ8MpNuT6Wz0iMdkNSZzOZ7ZBRx1a8IeVOMeZvb1cIWImXnq0tU5tfWnJr8WZveODemDwYFSwAAYVJQMAAlgDCpYAwJChgSBaApBCgKQCgigFAICiCghQCgEIQEDXV8ubblGS2tuzVrX5y5ekVupUwlSPDB2414S7C5ZRVEuEqsA7mW4qFLfHK71aLKKve1/iSYY105c1XNpfUglzyep9QwkW3Uq4yrPhnK3EvBXYMMopiBTwtSXBB9L2LtGSaodmjlzTTlJbGnZK/aTLGa2xIwDAkAYUMAZRIAwJChgAEsACpYABYCgigFAIFIIQKQCQKAQhQCgEDAhuA3AipShLyoxfStvWFicOrUy6m/Jbj2rtLllFcuDuZK/lxtx7b9Rcrvuenl0F5TlLsXYTKb8uzTpQj5MYroW3rIxmZlQRgUASBgVLACgYABLAAqWAASwBhQwBhVIIUEUAoCgFBCAoCkAkCmAhCA3AwBAwIwDAMAwDAouAXAAMAlsKCgbAABgSFDAAJYAFDAkAYVSCKAUEIFIBAUEUApgICQNwEIwBuBlwG4GXAy4GXAy4BcDAAACgAKMYEgDAGABUsAAGBIUMAYVLAtBFAKCFAKAoBQQoBAUAgKIEBAwIwBAwDAMAwAAwDGAMKCgYAwACWABQwAAYEgDCpAGFDKP//Z" class="card-img-top" alt="...">
-                 <div class="card-body">
-                    <h5 class="card-title">titulo 2</h5>
-                    <p  class="card-text">Contenido de Card</p>
-                    <p  class="card-text">Ultima actualizacion 1</p>
-                 </div>  
-              </div>
+<main> 
+    <section>
 
-              <div class="card" style="width: 12rem;">
-                 <img src="https://serv2.raiolanetworks.es/blog/wp-content/uploads/portada-3.jpg" class="card-img-top" alt="...">
-                 <div class="card-body">
-                    <h5 class="card-title">titulo 3</h5>
-                    <p  class="card-text">Contenido de Card</p>
-                    <p  class="card-text">Ultima actualizacion 1</p>
-                 </div>
+            <div class="oradores container-fluid" id="oradores">CONOCE A LOS <br>
+                <h1 class="text-center">ORADORES</h1>
+            </div>               
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/steve.jpg" width="50%" height="100%" class="card-img-top" />
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark">JavaScript</span>
+                            <span class="badge bg-secondary text-light react">React</span>
+                            <h4>Steve Jobs</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Dicta quisquam, similique repellendus suscipit excepturi nulla velit quasi assumenda 
+                                itaque nostrum error, explicabo veritatis. Exercitationem dolorum distinctio incidunt 
+                                at asperiores nulla!
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/bill.jpg" width="50%" height="100%" class="card-img-top" />
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark">JavaScript</span>
+                            <span class="badge bg-info text-light react">React</span>
+                            <h4>Bill Gates</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Dicta quisquam, similique repellendus suscipit excepturi nulla velit quasi assumenda 
+                                itaque nostrum error, explicabo veritatis. Exercitationem dolorum distinctio incidunt 
+                                at asperiores nulla!
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-          </div>
-      
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/ada.jpeg" width="50%" height="100%" class="card-img-top"  />
+                        <div class="card-body">
+                            <span class="badge bg-secondary">Negocios</span>
+                            <span class="badge bg-danger">StarUps</span>
+                            <h4>Ada Lovelace</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Dicta quisquam, similique repellendus suscipit excepturi nulla velit quasi assumenda 
+                                itaque nostrum error, explicabo veritatis. Exercitationem dolorum distinctio incidunt 
+                                at asperiores nulla!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <br>
+</main>
 
-        </section>
+            
+<div class="card card-a container fotohonolulu">
+    <div class="row" id="lugarfecha">
+        <div class="col foto">
+          <img src="img/honolulu.jpg" class="img-fluid"/>
+        </div>
+        <div class="col coldos">
+            <div class="card-body-dos">
+                <h1 class="card-title">Bs As - Octubre</h1>
+                <p class="card-text-dos">
+                    Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos 
+                    Honolulu es la  mas sureña de entre las principales ciudades estadounidenses.
+                    Aunque el nombre de Honolulu se refiere al area urbana en la costa sureste en la isla de Oahu,
+                    la ciudad y el condado de Honolulu han formado una ciudad 
+                    condado consolidada que cubre toda la ciudad (aproximadamente 600 Km<sup>2</sup>)
+                </p>
+                <button type="button" class="btn btn-light botontransparente">Conoc&eacute; M&aacute;s</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <br>
 
-    </main>
+    <div class="oradores" id="conor">CONVIERTETE EN UN <br />
+        <h2>ORADOR</h2>
+        <h8>Anotate como orador para dar una <span>charla ignite</span>. Cuentanos de que quieres hablar!</h8>
+    </div>
+
+    <div class="container">
+        <div class="row g-2">
+            <div class="col-md">
+                <div class="input-group">
+                    <span class="input-group-text">Nombre</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="input-group">
+                    <span class="input-group-text">Apellido</span>
+                    <input type="text" aria-label="Last name" class="form-control">
+                </div>
+            </div>
+            <span>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="¿Sobre qué quieres hablar?" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">¿Sobre qué quieres hablar?</label>
+                    </div>
+            </span>
+            <span>
+                <div  class="form-text">Recuerda incluir un titulo para tu charla.</div>
+            </span>
+            <span>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Enviar</button>
+                </div>
+            </span>
+        </div>
+    </div>
 
 
-    <fieldset>
+    <footer>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><p>Preguntas <br> Frecuentes</a></p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navcla" href="#"><p>Contactanos</a></p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navcla" href="#"><p>Prensa</a></p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navcla" href="#"><p>Conferencias</a></p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><p>Terminos y <br> Condiciones</a></p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navcla" href="#"><p>Privacidad</a></p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navcla" href="#"><p>Estudiantes</a></p>
+            </li>
+        </ul>
+    </footer>    
     
-        <form id="bootstrap-over" action="" method="get">
-            <p>
-                Email:<br> <input type="text" name="correo" maxlength="100"/>   
-            </p>
-            <p  class="card-text">Nunca comparta su email.</p>
-            <hr>
-            <p>
-                Contraseña: <br> <input type="text" name="correo" maxlength="100"/>   
-            </p>
-            <hr>
-            <p>
-                <input type="checkbox" name="condiciones"/>Verificar.    
-            </p>  
-            <hr>   
-        </form>
-    </fieldset>
-    <button type="button" class="btn btn-success">Enviar</button>
 </body>
-
 </html>
